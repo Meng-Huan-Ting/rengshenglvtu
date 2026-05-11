@@ -1,0 +1,80 @@
+/* 全局重置和基础样式 */
+body {
+    margin: 0;
+    padding: 50px 20px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fff0f5, #ffe4e1);
+    font-family: "微软雅黑", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrapper {
+    text-align: center;
+}
+
+/* 每一行文字的基础样式 */
+.content-wrapper p {
+    margin: 12px 0;
+    font-size: 20px;
+    color: #555;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* 最后一句生日祝福的特殊样式 */
+.content-wrapper .birthday-wish {
+    color: #ff1493;
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(255,20,147,0.6);
+}
+
+/* 文字淡入动画类 */
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* 四个角落公共样式 */
+.corner {
+    position: fixed;   /* 固定在屏幕角落，不滚动 */
+    width: 120px;       /* 图片大小自己随便改 */
+    height: auto;
+    z-index: 1;        /* 在文字下层，不挡住字 */
+}
+
+/* 左上角 */
+.top-left {
+    top: 40px;
+    left: 40px;
+}
+
+/* 右上角 */
+.top-right {
+    top: 40px;
+    right: 40px;
+}
+
+/* 左下角 */
+.bottom-left {
+    bottom: 40px;
+    left: 40px;
+}
+
+/* 右下角 */
+.bottom-right {
+    bottom: 40px;
+    right: 40px;
+}
+

@@ -1,0 +1,56 @@
+h1{
+	width:fit-content;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.p0{
+	font-size:20px;
+}
+.button0 {
+    font-size: 24px; /* 放大字体 */
+    padding: 12px 30px; /* 增加内边距，按钮更饱满 */
+    border: none; /* 去掉默认边框 */
+    border-radius: 25px; /* 圆角，更温柔 */
+    background: linear-gradient(135deg, #ffb6c1, #ffc0cb); /* 粉粉的渐变背景 */
+    color: white; /* 文字改成白色，更显眼 */
+    cursor: pointer; /* 鼠标移上去变成手型 */
+    transition: all 0.3s ease; /* 所有变化都有过渡动画 */
+    box-shadow: 0 4px 15px rgba(255, 182, 193, 0.4); /* 淡淡的阴影，更立体 */
+	animation: bounce 1.5s ease-in-out infinite alternate;
+}
+
+/* 鼠标悬停效果 */
+.button0:hover {
+    transform: scale(1.05); /* 鼠标移上去稍微放大 */
+    box-shadow: 0 6px 20px rgba(255, 182, 193, 0.6); /* 阴影变深 */
+}
+
+/* 定义弹跳动画 */
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-8px); }
+}
+
+.a0{
+	width: fit-content;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url("../images/02.jpg"); /* 换成你的图片路径 */
+    background-size:cover; /* 关键：背景图按比例铺满整个屏幕，不拉伸 */
+    background-position: center; /* 背景图居中显示 */
+    background-repeat: no-repeat; /* 禁止背景图重复平铺 */
+	background-color: rgba(228,118,120,1.00);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
