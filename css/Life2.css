@@ -19,8 +19,9 @@ body {
     margin: 12px 0;
     font-size: 20px;
     color: #555;
-    opacity: 0;
-    transform: translateY(20px);
+    opacity: 1;         /* 文字默认显示 */
+    transform: none;   /* 位置正常 */
+    animation: fadeIn 1s ease forwards; /* 直接在这里开启动画！ */
 }
 
 /* 最后一句生日祝福的特殊样式 */
